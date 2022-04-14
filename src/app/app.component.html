@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="column">
+    <div class="form-group">
+       <input type="text" class="form-control" id="search-text" (keypress)="musicSearchChange()" 
+        [(ngModel)]="musicSearchText" placeholder="Search Band">
+    </div>
+  
+    <div class="search-items">
+      <app-music-search-item [searchItems]="musicSearchItems$ | async"></app-music-search-item>
+    </div>
+  </div>
+  </div>
